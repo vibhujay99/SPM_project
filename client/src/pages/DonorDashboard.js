@@ -12,7 +12,7 @@ import {useNavigate} from "react-router-dom";
 
 
 
-const DonorDashboard = ({ firstName, lastName, nic, _id, email, address, phone }) => {
+const DonorDashboard = () => {
 
     const { donors, loading } = useSelector((state) => ({ ...state.donor }))
     const dispatch = useDispatch();
@@ -45,6 +45,7 @@ const DonorDashboard = ({ firstName, lastName, nic, _id, email, address, phone }
 
 
 
+        // eslint-disable-next-line array-callback-return
         dItems.slice(0).reverse().map(dItem => {
 
             const donorData = [

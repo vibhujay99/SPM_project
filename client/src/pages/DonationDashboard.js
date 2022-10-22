@@ -10,7 +10,7 @@ import {useNavigate} from "react-router-dom";
 
 
 
-const DonationDashboard = ({ title, type, date, _id, des, org, amount }) => {
+const DonationDashboard = () => {
 
     const { donations, loading } = useSelector((state) => ({ ...state.donation }))
     const dispatch = useDispatch();
@@ -43,6 +43,7 @@ const DonationDashboard = ({ title, type, date, _id, des, org, amount }) => {
 
 
 
+        // eslint-disable-next-line array-callback-return
         dnItems.slice(0).reverse().map(dnItem => {
 
             const donationData = [

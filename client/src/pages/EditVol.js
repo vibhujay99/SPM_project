@@ -8,8 +8,7 @@ import {
   MDBCardHeader,
   MDBValidation,
 } from "mdb-react-ui-kit";
-import { toast } from "react-toastify";
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const EditVol = () => {
   const { id } = useParams();
@@ -35,6 +34,7 @@ const EditVol = () => {
         setPhone(res.data.phone);
       });
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSubmit = async (e) => {

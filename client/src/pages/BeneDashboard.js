@@ -9,7 +9,7 @@ import "jspdf-autotable";
 import {useNavigate} from "react-router-dom";
 
 
-const BeneDashboard = ({ firstName, lastName, nic, _id, email, address, phone }) => {
+const BeneDashboard = () => {
 
     const { beneficiaries, loading } = useSelector((state) => ({ ...state.beneficiary }))
     const dispatch = useDispatch();
@@ -42,6 +42,7 @@ const BeneDashboard = ({ firstName, lastName, nic, _id, email, address, phone })
 
 
 
+        // eslint-disable-next-line array-callback-return
         bItems.slice(0).reverse().map(bItem => {
 
             const beneData = [
