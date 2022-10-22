@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import { MDBCard, MDBCardBody, MDBInput, MDBBtn, MDBCardHeader, MDBValidation } from "mdb-react-ui-kit";
-import {toast} from "react-toastify";
-import {useNavigate, useParams, Link} from "react-router-dom";
+import {useParams, Link} from "react-router-dom";
 
 
 const EditDonation = () => {
@@ -28,6 +27,7 @@ const EditDonation = () => {
                 setDes(res.data.des);
             })
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const handleSubmit = async (e) => {

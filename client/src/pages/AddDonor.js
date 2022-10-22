@@ -4,7 +4,6 @@ import {toast} from "react-toastify";
 import {useNavigate, useParams, Link} from "react-router-dom";
 import {useDispatch,useSelector} from "react-redux";
 import {createDonor, updateDonor} from "../redux/features/donorSlice";
-import swal from 'sweetalert'
 
 
 const initialState={

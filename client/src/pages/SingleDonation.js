@@ -23,6 +23,7 @@ const SingleDonation = ({_id}) => {
     if (id) {
       dispatch(getDonation(id));
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   return (

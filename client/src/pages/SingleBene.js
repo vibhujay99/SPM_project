@@ -23,6 +23,7 @@ const SingleBene = ({_id}) => {
     if (id) {
       dispatch(getBeneficiary(id));
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   return (

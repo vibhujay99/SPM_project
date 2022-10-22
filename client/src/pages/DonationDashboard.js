@@ -19,6 +19,7 @@ const DonationDashboard = ({ title, type, date, _id, des, org, amount }) => {
 
     useEffect(() => {
         dispatch(getDonations());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (loading) {

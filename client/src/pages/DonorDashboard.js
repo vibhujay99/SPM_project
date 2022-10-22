@@ -21,6 +21,7 @@ const DonorDashboard = ({ firstName, lastName, nic, _id, email, address, phone }
 
     useEffect(() => {
         dispatch(getDonors());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (loading) {

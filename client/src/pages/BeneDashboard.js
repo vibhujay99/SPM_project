@@ -18,6 +18,7 @@ const BeneDashboard = ({ firstName, lastName, nic, _id, email, address, phone })
 
     useEffect(() => {
         dispatch(getBeneficiaries());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (loading) {
